@@ -43,6 +43,12 @@ class StytchController < ApplicationController
     end
   end
 
+  def logout
+    session.delete(:current_user_id)
+    @_current_user = nil
+    redirect_to root_path
+  end
+
   private
 
   def stytch_client

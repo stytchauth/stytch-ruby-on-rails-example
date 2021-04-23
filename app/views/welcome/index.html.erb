@@ -5,6 +5,7 @@
   <% else %>
     <p>Hello! Please <%= link_to 'set your name', settings_path %>.</p>
   <% end %>
+  <p><%= link_to 'Log out', logout_path %></p>
 <% else %>
   <p>Welcome! Please <%= link_to 'log in', login_path %> to be greeted.</p>
 <% end %>

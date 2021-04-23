@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   # Handle the redirect and validate the authentication token
   get '/authenticate', to: 'stytch#authenticate'
 
+  # Clear the session cookie
+  get '/logout', to: 'stytch#logout'
+
   # Allow users to set their names.
   get '/settings', to: 'users#edit'
   patch '/settings', to: 'users#update'
