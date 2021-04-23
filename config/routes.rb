@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+  # Greet users on the home page!
+  root 'welcome#index'
+
   # Login form
   get '/login', to: 'stytch#login'
 

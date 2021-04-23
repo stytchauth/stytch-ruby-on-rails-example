@@ -29,6 +29,20 @@ class StytchController < ApplicationController
     render 'check_your_email', locals: { email: email }
   end
 
+  def authenticate
+    token = params.require(:token)
+    resp = stytch_client.authenticate_magic(token: token)
+    if resp['status_code'] == 200
+      user = User.find_or_create_by!(stytch_user_id: resp['user_id'])
+      session[:current_user_id] = user.id
+      redirect_to root_path
+    else
+      Rails.logger.error 'Could not authenticate magic link'
+      Rails.logger.error resp
+      render 'authentication_error'
+    end
+  end
+
   private
 
   def stytch_client
