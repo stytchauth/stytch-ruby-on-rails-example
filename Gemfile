@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use dotenv to set secrets through environment variables
 gem 'dotenv-rails', groups: [:development, :test]
+
+# The official Stytch client gem!
+gem 'stytch'

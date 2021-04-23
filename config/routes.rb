@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   # Login form
   get '/login', to: 'stytch#login'
+
+  # Handle the login form submission
+  post '/login', to: 'stytch#create'
+
+  # Handle the redirect and validate the authentication token
+  get '/authenticate', to: 'stytch#authenticate'
 end
