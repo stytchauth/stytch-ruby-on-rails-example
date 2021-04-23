@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   # Handle the redirect and validate the authentication token
   get '/authenticate', to: 'stytch#authenticate'
+
+  # Allow users to set their names.
+  get '/settings', to: 'users#edit'
 end
