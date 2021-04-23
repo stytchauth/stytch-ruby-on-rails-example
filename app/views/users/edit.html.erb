@@ -1,0 +1,14 @@
+<h1>Set your name</h1>
+
+<p>How would you like to be greeted?</p>
+
+<%= form_with model: @user, url: settings_path do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit 'Submit' %>
+  </div>
+<% end %>

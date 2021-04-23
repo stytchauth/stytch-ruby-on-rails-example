@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   # Allow users to set their names.
   get '/settings', to: 'users#edit'
+  patch '/settings', to: 'users#update'
 end
