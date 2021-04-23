@@ -1,0 +1,14 @@
+<h1>Sign up or log in</h1>
+
+<p>Sign up or log in with your email, no password needed.</p>
+
+<%= form_with do |form| %>
+  <div>
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit 'Sign in with email' %>
+  </div>
+<% end %>
