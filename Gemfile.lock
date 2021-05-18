@@ -185,7 +185,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
-    stytch (0.1.19)
+    stytch (0.2.1)
       faraday (>= 0.17.0, < 2.0)
       faraday_middleware (>= 0.14.0, < 2.0)
     thor (1.1.0)
@@ -233,7 +233,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   sqlite3 (~> 1.4)
-  stytch
+  stytch (~> 0.2.1)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
