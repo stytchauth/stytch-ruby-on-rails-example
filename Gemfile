@@ -59,4 +59,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails', groups: [:development, :test]
 
 # The official Stytch client gem!
-gem 'stytch', '~> 0.2.1'
+gem 'stytch', '~> 2.0.0'
