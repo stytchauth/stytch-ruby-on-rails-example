@@ -3,7 +3,7 @@ class StytchController < ApplicationController
 
   def create
     email = params.require(:email)
-    resp = stytch_client.login_or_create_user(
+    resp = stytch_client.magic_links.email.login_or_create(
       email: email,
       # Make sure to use the `*_url` helpers instead of `*_path` ones!  The
       # domain is required to issue the redirect.
@@ -31,7 +31,7 @@ class StytchController < ApplicationController
 
   def authenticate
     token = params.require(:token)
-    resp = stytch_client.authenticate_magic(token: token)
+    resp = stytch_client.magic_links.authenticate(token: token)
     if resp['status_code'] == 200
       user = User.find_or_create_by!(stytch_user_id: resp['user_id'])
       session[:current_user_id] = user.id
