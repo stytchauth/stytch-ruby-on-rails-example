@@ -2,9 +2,9 @@
 
 This repo shows one way to integrate Stytch magic link logins into a Rails app.
 
-## Whitelist Magic Link URL
+## Register Magic Link URL
 Visit https://stytch.com/dashboard/magic-link-urls to add
-`http://localhost:4567/authenticate` as a valid sign-up and login URL.
+`http://localhost:3000/authenticate` as a valid sign-up and login URL.
 
 ## Development Setup
 
