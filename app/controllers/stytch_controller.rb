@@ -1,4 +1,6 @@
 class StytchController < ApplicationController
+  class StytchError < StandardError; end
+
   def login; end
 
   def create
@@ -10,6 +12,10 @@ class StytchController < ApplicationController
       login_magic_link_url: authenticate_url,
       signup_magic_link_url: authenticate_url
     )
+    if resp['status_code'] != 200
+      Rails.logger.error resp
+      raise StytchError, "#{resp['error_type']}: #{resp['error_message']} (#{resp['error_url']})"
+    end
 
     # You might want to have different templates for new users and returning
     # users.  If you do, consider that this may allow an attacker to use the
