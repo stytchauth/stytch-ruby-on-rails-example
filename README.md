@@ -12,6 +12,7 @@ Visit https://stytch.com/dashboard/redirect-urls to add
 2. Clone this repo.
 3. Run `bin/setup` to install everything else and set up your Stytch API keys.
 4. Run `bin/rails server` to start the app.
+5. Navigate to `http://localhost:3000` to access the app. **NOTE:** When using this app, do not navigate to `http://127.0.0.1`, doing so will render the redirect URL non-functional.
 
 ## License
 
