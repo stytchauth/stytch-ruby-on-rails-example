@@ -1064,10 +1064,10 @@
   dependencies:
     spark-md5 "^3.0.0"
 
-"@rails/ujs@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.1.4.tgz#093d5341595a02089ed309dec40f3c37da7b1b10"
-  integrity sha512-O3lEzL5DYbxppMdsFSw36e4BHIlfz/xusynwXGv3l2lhSlvah41qviRpsoAlKXxl37nZAqK+UUF5cnGGK45Mfw==
+"@rails/ujs@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.4.tgz#7fe5387d2d82b0547fdfc6667b424ec119c86b1e"
+  integrity sha512-UY9yQxBvtqXzXScslgPwZoQd16T0+z3P6BQS4lZDJFg5xVuMIgHkHQI6dhyWEt5l/qwbGaYX+YiZu6J+oxWPOw==
 
 "@rails/webpacker@5.4.3":
   version "5.4.3"
@@ -5868,8 +5868,6 @@ resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
   integrity sha1-AKn3OHVW4nA46uIyyqNypqWbZlo=
-  dependencies:
-    resolve-from "^3.0.0"
 
 resolve-dir@^1.0.0, resolve-dir@^1.0.1:
   version "1.0.1"
@@ -6612,9 +6610,6 @@ to-regex-range@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-2.1.1.tgz#7c80c17b9dfebe599e27367e0d4dd5590141db38"
   integrity sha1-fIDBe53+vlmeJzZ+DU3VWQFB2zg=
-  dependencies:
-    is-number "^3.0.0"
-    repeat-string "^1.6.1"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
