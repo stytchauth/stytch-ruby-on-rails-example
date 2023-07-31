@@ -552,8 +552,6 @@
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-logical-assignment-operators/-/plugin-syntax-logical-assignment-operators-7.10.4.tgz#ca91ef46303530448b906652bac2e9fe9941f699"
   integrity sha512-d8waShlpFDinQ5MtvGU9xDAOzKH47+FFoney2baFIoMr952hKOLp1HR7VszoZvOsV/4+RRszNY7D17ba0te0ig==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.10.4"
 
 "@babel/plugin-syntax-nullish-coalescing-operator@^7.8.3":
   version "7.8.3"
@@ -1069,10 +1067,10 @@
   resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.1.4.tgz#093d5341595a02089ed309dec40f3c37da7b1b10"
   integrity sha512-O3lEzL5DYbxppMdsFSw36e4BHIlfz/xusynwXGv3l2lhSlvah41qviRpsoAlKXxl37nZAqK+UUF5cnGGK45Mfw==
 
-"@rails/webpacker@5.4.3":
-  version "5.4.3"
-  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-5.4.3.tgz#cfe2d8faffe7db5001bad50a1534408b4f2efb2f"
-  integrity sha512-tEM8tpUtfx6FxKwcuQ9+v6pzgqM5LeAdhT6IJ4Te3BPKFO1xrGrXugqeRuZ+gE8ASDZRTOK6yuQkapOpuX5JdA==
+"@rails/webpacker@5.4.4":
+  version "5.4.4"
+  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-5.4.4.tgz#971a41b987c096c908ce4088accd57c1a9a7e2f7"
+  integrity sha512-hp9myb2MChYFPfE5Fd/3gF4q2m4wpxC+WWCkxcg6My3HYCptWuqMVXRwrBZ5EJHYiL/WRyMLvVNWwlFV47xhUw==
   dependencies:
     "@babel/core" "^7.15.0"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
